@@ -1,4 +1,6 @@
-﻿namespace TechJobs.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TechJobs.Models
 {
     public class Job
     {
