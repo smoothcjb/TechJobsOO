@@ -27,8 +27,8 @@ namespace TechJobs.Controllers
         // Process search submission and display search results
         public IActionResult Results(SearchJobsViewModel jobsViewModel)
         {
-
-            if (jobsViewModel.Column.Equals(JobFieldType.All) || jobsViewModel.Value.Equals(""))
+           
+            if (jobsViewModel.Column.Equals(JobFieldType.All) || jobsViewModel.Value.Equals("")) 
             {
                 jobsViewModel.Jobs = jobData.FindByValue(jobsViewModel.Value);
             }
